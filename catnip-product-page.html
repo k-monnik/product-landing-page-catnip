@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Catnip Product Landing Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Quicksand', sans-serif;
+            color: #472a04;
+        }
+        
+        #page-wrapper {
+            position: relative;
+        }
+        
+        h2 {
+            font-size: 30px;
+            font-weight: 300;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        form {
+            padding: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        header {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            max-width: 1000px;
+            min-height: 10px;
+            max-height: 250px;
+            display: flex;
+            justify-content: space-around;
+            background-color: #fff;
+            >
+        }
+        
+        @media (max-width: 600px) {
+            header {
+                flex-wrap: wrap;
+            }
+        }
+        
+        .logo {
+            width: 300px;
+        }
+        
+        @media (max-width: 650px) {
+            .logo {
+                margin-top: 15px;
+                width: 100%;
+                position: relative;
+            }
+        }
+        
+        .logo>img {
+            width: 200px;
+            position: absolute;
+            top: 17px;
+            left: 1%;
+        }
+        
+        @media (max-width: 650px) {
+            .logo>img {
+                margin: 0 auto;
+            }
+        }
+        /*start nav bar */
+        
+        nav {
+            height: 170px;
+        }
+        
+        nav ul {
+            float: right;
+            margin-right: 25px;
+        }
+        
+        nav ul li {
+            display: inline-block;
+            line-height: 40px;
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            position: relative;
+            color: #472a04;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        
+        #headline {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+            height: auto;
+            align-items: center;
+            margin-top: 160px;
+            margin-bottom: 10px;
+        }
+        
+        .button {
+            padding: 0 20px;
+            height: 30px;
+            font-size: 0.8em;
+            font-weight: 200;
+            text-transform: uppercase;
+            border: 1px black solid;
+            border-radius: 3px;
+            background: transparent;
+            cursor: pointer;
+        }
+        /* Products grid */
+        
+        .grid {
+            display: flex;
+            margin-left: 30px;
+        }
+        
+        .desc {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 125px;
+            width: 80vw;
+            padding: 5px;
+        }
+        
+        #products .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 125px;
+            width: 20vw;
+        }
+        
+        #subs {
+            margin-top: 60px;
+        }
+        
+        .sub-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: calc(100% / 3);
+            margin: 10px;
+        }
+        
+        .sub-box>ol {
+            display: flex;
+        }
+        
+        .subs-btn {
+            text-align: center;
+        }
+        
+        .row {
+            display: flex;
+        }
+        
+        .cat-pics {
+            flex: 33.33%;
+            padding: 7px;
+        }
+        
+        #pic-left {
+            max-width: 300px;
+            height: auto;
+        }
+        
+        #pic-middle {
+            max-width: 300px;
+            height: auto;
+        }
+        
+        #pic-right {
+            max-width: 300px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://kit.fontawesome.com/2cd678f4c6.js" crossorigin="anonymous"></script>
+    <div id="page-wrapper">
+        <!-- START nav bar -->
+        <header id="header">
+            <div class="logo">
+                <img id="header-img" src="https://cdn.dribbble.com/users/1169532/screenshots/3735654/0_24.png" alt="catnip labs logo">
+            </div>
+            <nav id="nav-bar">
+                <ul>
+                    <li><a class="nav-link" href=#products>Products</a></li>
+                    <li><a class="nav-link" href=#subs>Subscriptions</a></li>
+                    <li><a class="nav-link" href=#kitties>Happy Kitties</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- END nav bar -->
+
+        <!-- START header section -->
+        <section id="headline">
+            <h2>Handcrafted organic catnip for sophisticated kitties</h2>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input name="email" id="email" type="email" placeholder="Email address" required/>
+                <input id="submit" type="submit" value="Meow" class="button" />
+            </form>
+            <img id="main-img" src="https://www.marketspice.com/607-tm_large_default/catnip.jpg" alt="dried catnip" />
+
+        </section>
+        <!-- END header section -->
+
+        <!-- START products section -->
+        <div class="container">
+            <section id="products">
+                <div class="grid">
+                    <div class="icon"><i class="fas fa-paw fa-4x"></i></div>
+                    <div class="desc">
+                        <h3>High-Potency Catnip</h3>
+                        <p>Our organically-grown, all-natural catnip is handcrafted with no preservatives or artifical ingredients for the highest quality. We guarantee that your kitties will crave our high-potency catnip! Available in coarse or fine cut.</p>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="icon"><i class="fas fa-paw fa-4x"></i></div>
+                    <div class="desc">
+                        <h3>Premium Catnip Toys</h3>
+                        <p>Handmade kitty toys crafted with high-quality fabrics and yarn, and stuffed with our signature high-potency catnip. Available in a multitude of varieties including mouse, bird, mini yarn balls, tea bags, and catnip lollipops.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- END products section -->
+
+        <!-- START subscription section -->
+        <section id="subs">
+            <h2>The Catnip Labs Subscription Box</h2>
+            <div class="catnip-box" id="box">
+                <div class="sub-box">1 Ounce</div>
+                <ol>
+                    <li>1 ounce of our premium organic catnip</li>
+                    <li>sample new strains each month</li>
+                </ol>
+            </div>
+            <div class="catnip-box" id="box">
+                <div class="sub-box">2 Catnip Toys</div>
+                <ol>
+                    <li>keep your kitty entertained with</li>
+                    <li>new toys each month</li>
+                </ol>
+            </div>
+            <div class="catnip-box" id="box">
+                <div class="sub-box">$15/Month</div>
+                <ol>
+                    <li>never run out of catnip again with our</li>
+                    <li> monthly subscription box</li>
+                </ol>
+            </div>
+            <div class="subs-btn">
+                <button class="button">Get The Box</button>
+            </div>
+        </section>
+        <!-- END subscription section -->
+
+        <!-- START happy kitties section -->
+        <section id="kitties">
+            <h2>Happy kitties can't get enough of our high-potency catnip!</h2>
+            <div class="row">
+                <div class="cat-pics">
+                    <img id="pic-left" src="https://media1.popsugar-assets.com/files/thumbor/0odYNhg9sMMjROZv4-44JnpgxpE/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2018/06/27/878/n/24155406/1b75c86c82c0c588__DSC9069/i/Cats-Catnip-Photo-Series.jpg" alt="Two kittens playing with catnip"
+                    />
+                </div>
+                <div class="cat-pics">
+                    <img id="pic-middle" src="https://www.rd.com/wp-content/uploads/2019/07/cat-catnip-scaled.jpg" alt="Grey cat with eyes closed laying down with sprig of fresh catnip in its paws" />
+                </div>
+                <div class="cat-pics">
+                    <img id="pic-right" src="https://i.insider.com/5b2d07195e48eca9028b458d?width=1100&format=jpeg&auto=webp" alt="Black cat looking at camera after rolling in catnip">
+                </div>
+            </div>
+            <div align="center">
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/X2C96VJxYto" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+        <!-- END happy kitties section -->
+
+        <!-- START footer -->
+        <footer>
+            <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <span>Copyright 2020, Catnip Labs</span>
+        </footer>
+    </div>
+</body>
+
+</html>
